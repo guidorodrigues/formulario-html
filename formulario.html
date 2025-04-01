@@ -14,62 +14,76 @@
         <p>Complete suas informações!</p>
         <hr>
     </header>
+    
     <main>
-        <form>
-
+        <form id="cadastroJogador">
             <fieldset>
                 <div>
-                    <h2>Cadastro de Jogador</h2>
+                    <h2>Cadastro de Jogador</h2><!--informações do jogador-->
+                </div>
+                <div">
+                    <p>
+                        <label for="jogador">jogador:</label>
+                        <input type="text" name="jogador" id="jogador" placeholder="Digite o seu nome">
+                    </p><!--nome do jogador-->
                 </div>
                 <div>
-                    <label for="jogador">jogador:</label>
-                    <input type="text" name="jogador" id="jogador">
-                </div><br>
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email">
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite o seu email">
+                    </p><!--email do jogador-->
                 </div>
             </fieldset>
         </form>
+        
         <form> <!--formularios-->
             <fieldset>
                 <div>
-                    <h2>Cadastro de Perssonagem</h2> <!--Cadastro de player-->
-                    
-
+                    <h2>1. Cadastro de Perssonagem</h2> <!--Cadastro de personagem-->
                 </div>
+
                 <div>
-                    <label for="name">Nome:</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite o nome">
-                </div><br>
+                    <p>
+                        <label for="name">Nome:</label><!--nome do personagem-->
+                        <input type="text" name="nome" id="nome" placeholder="Digite o nome">
+                    </p>
+                </div>
 
                 <div><!--Nome do personagem-->
-                    <label for="sobrenome">Sobrenome:</label>
-                    <input type="text" nome="Sobrenome" id="Sobrenome" placeholder="Digite o Sobrenome">
-                </div><br>
+                    <p>
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" nome="Sobrenome" id="Sobrenome" placeholder="Digite o sobrenome">
+                    </p>
+                </div>
 
-                <div><!--Sexo-->
-                    <label for="sexo">Sexo:</label>
-                    <input type="radio" name="sexo" id="sexo">
-                    <label for="sexo">Masculino</label>
-                    <input type="radio" name="sexo" id="sexo">
-                    <label for="sexo">Feminino</label>
-                    <input type="radio" name="sexo" id="sexo">
-                    <label for="sexo">Outro</label>
-                </div><br>
+                <div><!--Sexo do personagem-->
+                    <p>
+                        <label for="sexo">Sexo:</label>
+                        <input type="radio" name="sexo" id="sexo">
+                        <label for="sexo">Masculino</label>
+                        <input type="radio" name="sexo" id="sexo">
+                        <label for="sexo">Feminino</label>
+                        <input type="radio" name="sexo" id="sexo">
+                        <label for="sexo">Outro</label>
+                    </p>
+                </div>
 
-                <div>
-                    <label for="origem">Origem:</label>
-                    <input type="text" name="origem" id="origem" placeholder="Ex: Atleta">
-                </div><br>
+                <div><!--origem d eclasse-->
+                    <p>
+                        <label for="origem">Origem:</label>
+                        <input type="text" name="origem" id="origem" placeholder="Ex: Atleta">
+                    </p>
+                </div>
 
-                <div>
-                    <label for="nascimento">Data de Nascimento:</label>
-                    <input type="date" name="nascimento" id="nascimento">
-                </div><br>
+                <div><!--data de nascimento de personagem-->
+                    <p>
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="date" name="nascimento" id="nascimento">
+                    </p>
+                </div>
 
-                <h2>Informações de Ficha</h2>
-                <label for="classe"><strong>Classe:</strong></label><br>
+                <h2>2. Informações de Ficha</h2><!--informações da ficha do personafem-->
+                <label for="classe"><strong>Classe do Agente:</strong></label><br>
                 <p>
                     <input type="radio" name="Classe" id="classe">
                     <label for="Classe">Combatente</label>
@@ -82,11 +96,12 @@
                     <input type="radio" name="Classe" id="classe">
                     <label for="Classe">ocultista</label>
                 </p>
-                <div><br>
 
-                    <label for="trilha"><strong>Trilha:</strong></label>
+                <div>
+                    <label for="trilha"><strong>Trilha de Classe:</strong></label>
+                    <p>
                         <select name="trilhaClasse" id="trilhaClasse">
-                            <option value="0"></option>
+                            <option value="0">Opções</option>
                             <option value="1">Aniquilador</option>
                             <option value="2">Tropa de Choque</option>
                             <option value="3">Guerreiro</option>
@@ -100,14 +115,33 @@
                             <option value="11">Graduado</option>
                             <option value="12">Intuitivo</option>
                         </select>
+                    </p>
                 </div><br>
                 <div>
-                    <label for="objetivo">Objetivo d o Perssonagem:</label>
-                    <p><input type="text" name="objetivo" id="objetivo"></p>
+                </div>
+
+                <h2>3. Backstory do Personagem</h2><!--historia de fundo-->
+                <div>
+                    <label for="outrolado"><strong>Descreva o momento em que você percebeu que o mundo não era como imaginava:</strong></label>
+                    <p><input type="text" name="outrolado" id="outrolado" placeholder="Digite aqui"></p>
+                </div>
+                <div>
+                    <label for="arrependido"><strong>Qual é seu maior arrependimento?</strong></label>
+                    <p><input type="text" name="arrependido" id="arrependido" placeholder="Digite aqui"></p>
+                </div>
+                <div>
+                    <label for="motivo"><strong><strong>O que te motiva a continuar?</strong>
+                    <p></strong><input type="text" name="motivo" id="motivo" placeholder="Digite aqui"></label></p>
+                </div>
+                <div>
+                    <label for="medo" name="medo" id="medo"><strong>Como o Medo te afeta?</strong></label>
+                    <p><input type="text" name="medo" id="medo" placeholder="Digite aqui"></p>
                 </div>
             </fieldset>
         </form>
     </main>
+    <hr>
+    <footer><a href="https://github.com/guidorodrigues">Desenvolvido por Guido Rodrigues</a></footer>
 </body>
 
 </html>
