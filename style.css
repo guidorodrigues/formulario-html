@@ -37,7 +37,7 @@ body {
     min-height: 100vh;
     position: relative;
 }
-
+/* estilo da marca dagua */
 .watermark {
     position: fixed;
     top: 50%;
@@ -61,6 +61,7 @@ body {
     z-index: 1100;
 }
 
+/* estilo do formulario */
 fieldset{
     border: 0;
 }
