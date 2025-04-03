@@ -61,19 +61,26 @@ body {
     z-index: 1100;
 }
 
-/* estilo do formulario */
-fieldset{
-    border: 0;
+@font-face {
+    font-family: 'sigilos';
+    src: url(fonte/Sigilos-Regular.ttf) format('opentype');
 }
 
+/* estilo do formulario */
+
+
+
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
     background-color: #f0f8ff;
     font-size: 1em;
     color: #59429d;
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
+}
+abbr{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 input, select, textarea, butao{
@@ -86,5 +93,17 @@ input, select, textarea, butao{
 .campo label{
     margin-bottom: 0.2em;
     color: #59429d;
-    
+    display: block;
+}
+
+fieldset .grupo .campo{
+    float: left;
+    margin-right: 1em;
+
+}
+
+.campo input[type='text'], .campo input[type='email'], .campo area, .campo select{
+    padding: 1.2em;
+    border: 1px solid purple;
+    box-shadow: ;
 }
