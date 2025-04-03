@@ -9,169 +9,169 @@
 </head>
 
 <body>
-    <img src="/imagens/ordo-realitas.png" class="watermark" alt="Marca d'água">
-    <header>
-        <h1 id="titulo">FORMULÁRIO</h1> 
-        <p id="subtitulo">Complete as informacoes!</p>
-    </header>
-    <hr>
-
-    <form>
-        <fieldset>
-            <!-- Seção de cadastro de jogador -->
-            <div class="campo">
-                <h2>Cadastro de Jogador</h2>
-                <label for="jogador"><strong>Nome:</strong></label>
-                <input type="text" name="jogador" id="jogador" placeholder="Digite o seu nome" required><br>
-            </div><br>
-
-            <div class="campo">
-                <label for="email"><strong>E-mail:</strong></label >
-                <input type="email" name="email" id="email" placeholder="Digite o seu email" required>
-            </div><br>
-            <div class="campo">
-                <label for="nascimento"><strong>Nascimento:</strong></label>
-                <input type="date" name="nascimento" id="nascimento">
-            </div><br>
-            <div class="campo">
-                <label for="sexo"><strong>Sexo:</strong></label>
-                <input type="radio" name="sexo" id="sexoMasculino" value="Masculino" required> Masculino
-                <input type="radio" name="sexo" id="sexoFeminino" value="Feminino"> Feminino
-                <input type="radio" name="sexo" id="sexoOutro" value="Outro"> Outro
-            </div><br>
-            <!-- Seção de experiências com RPG -->
-            <div class="campo">
-                <label for="experiencia"><strong>Qual suas experiências com RPG de mesa?</strong></label>
-                <p>
-                    <input type="radio" name="experiencia" id="experienciaIniciante" value="Iniciante" required> Iniciante
-                </p>
-                <p>
-                    <input type="radio" name="experiencia" id="experienciaIntermediario" value="Intermediário"> Intermediário
-                </p>
-                <p>
-                    <input type="radio" name="experiencia" id="experienciaAvancado" value="Avançado"> Avançado
-                </p>
-            </div>
-        </fieldset>
-        <fieldset>
-            <h2>Cadastro de Personagem</h2>
-            <label for="nome"><strong>Nome:</strong></label>
-            <input type="text" name="nome" id="nome" placeholder="Digite o nome" required><br><br>
-            <div class="campo">
-                <label for="origem"><strong>Origem:</strong></label>
-                <select name="origem" id="origem">
-                    <option value="0">Selecione</option>
-                    <option value="1">Acadêmico</option>
-                    <option value="2">Agente de Saúde</option>
-                    <option value="3">Amnésico</option>
-                    <option value="4">Artista</option>
-                    <option value="5">Atleta</option>
-                    <option value="6">Chef</option>
-                    <option value="7">Criminoso</option>
-                    <option value="8">Cultista Arrependido</option>
-                    <option value="9">Desgarrrado</option>
-                    <option value="10">Engenheiro</option>
-                    <option value="11">Executivo</option>
-                    <option value="12">Investigador</option>
-                    <option value="13">Lutador</option>
-                    <option value="14">Magnata</option>
-                    <option value="15">Mercenário</option>
-                    <option value="16">Operário</option>
-                    <option value="17">Policial</option>
-                    <option value="18">Religioso</option>
-                    <option value="19">Servidor Público</option>
-                    <option value="20">Teórico da Conspiração</option>
-                    <option value="21">T.I.</option>
-                    <option value="22">Trabalhador Rural</option>
-                    <option value="23">Trambiqueiro</option>
-                    <option value="24">Universitário</option>
-                    <option value="25">Vítima</option>
-                </select>
-            </div><br>
-            <div class="campo">
-                <label for="classe"><strong>Classe:</strong></label>
-                <select name="classe" id="classe">
-                    <option value="0">Selecione</option>
-                    <option value="1">Combatente</option>
-                    <option value="2">Especialista</option>
-                    <option value="3">Ocultista</option>
-                </select>
-            </div><br>
-            <div class="campo">
-                <label for="sexoPersonagem"><strong>Sexo:</strong></label>
-                <input type="radio" name="sexoPersonagem" id="sexoPersonagemMasculino" value="Masculino" required> Masculino
-                <input type="radio" name="sexoPersonagem" id="sexoPersonagemFeminino" value="Feminino"> Feminino
-                <input type="radio" name="sexoPersonagem" id="sexoPersonagemOutro" value="Outro"> Outro
-            </div><br>
-            <div class="campo">
-                <label for="nascimentoPersonagem"><strong>Nascimento:</strong></label>
-                <input type="date" name="nascimentoPersonagem" id="nascimentoPersonagem" required>
-            </div><br>
-            <div class="campo">
-                <label for="trilhaClasse"><strong>Trilha:</strong></label>
-                <select name="trilhaClasse" id="trilhaClasse">
-                    <option value="0">Selecione</option>
-                    <option value="1">Aniquilador</option>
-                    <option value="2">Tropa de Choque</option>
-                    <option value="3">Guerreiro</option>
-                    <option value="4">Operações Especiais</option>
-                    <option value="5">Médico de Campo</option>
-                    <option value="6">Técnico</option>
-                    <option value="7">Infiltrador</option>
-                    <option value="8">Negociador</option>
-                    <option value="9">Lâmina Paranormal</option>
-                    <option value="10">Conduíte</option>
-                    <option value="11">Graduado</option>
-                    <option value="12">Intuitivo</option>
-                </select>
-            </div><br>
-        </fieldset>
-        <fieldset>
-            <!-- Seção de perguntas adicionais -->
-            <div class="campo">
-                <label for="outroLado">
-                    <strong>4. Descreva o momento em que você percebeu que o mundo não era como imaginava:</strong>
-                </label>
-                <textarea rows="6" style="width: 26em;" required></textarea>
-            </div><br>
-            <div class="campo">
-                <label for="arrependimento">
-                    <strong>5. Qual é o seu maior arrependimento?</strong>
-                </label>
-                <textarea rows="6" style="width: 26em;" required></textarea>
-            </div><br>
-            <div class="campo">
-                <label for="motivo">
-                    <strong>6. O que te motiva a continuar?</strong>
-                </label>
-                <textarea rows="6" style="width: 26em;" required></textarea>
-            </div><br>
-            <div class="campo">
-                <label for="medo">
-                    <strong>7. Qual o seu maior medo?</strong>
-                </label>
-                <textarea rows="6" style="width: 26em;" required></textarea>
-            </div><br>
-            <!-- Seção de estilo de jogo -->
-            <fieldset class="informacoesAdicionais">
+    <main>
+        <img src="/imagens/ordo-realitas.png" class="watermark" alt="Marca d'água">
+        <header>
+            <h1 id="titulo">FORMULÁRIO</h1>
+            <p id="subtitulo">Complete as informacoes!</p>
+        </header>
+        <hr>
+        <form>
+            <fieldset>
+                <!-- Seção de cadastro de jogador -->
                 <div class="campo">
-                    <h3>Qual o seu estilo de jogo?</h3>
-                    <input type="checkbox" name="estilo" id="estiloRoleplay" value="Roleplay"> <label for="roleplay">Roleplay</label>
+                    <h2>Cadastro de Jogador</h2>
+                    <label for="jogador"><strong>Nome:</strong></label>
+                    <input type="text" name="jogador" id="jogador" placeholder="Digite o seu nome" required><br>
                 </div><br>
                 <div class="campo">
-                    <input type="checkbox" name="estilo" id="estiloCombate" value="Combate"> <label for="combate">Combate</label>
+                    <label for="email"><strong>E-mail:</strong></label >
+                    <input type="email" name="email" id="email" placeholder="Digite o seu email" required>
+                </div><br>
+                <div class="campo">
+                    <label for="nascimento"><strong>Nascimento:</strong></label>
+                    <input type="date" name="nascimento" id="nascimento">
+                </div><br>
+                <div class="campo">
+                    <label for="sexo"><strong>Sexo:</strong></label>
+                    <input type="radio" name="sexo" id="sexoMasculino" value="Masculino" required> Masculino
+                    <input type="radio" name="sexo" id="sexoFeminino" value="Feminino"> Feminino
+                    <input type="radio" name="sexo" id="sexoOutro" value="Outro"> Outro
+                </div><br>
+                <!-- Seção de experiências com RPG -->
+                <div class="campo">
+                    <label for="experiencia"><strong>Qual suas experiências com RPG de mesa?</strong></label>
+                    <p>
+                        <input type="radio" name="experiencia" id="experienciaIniciante" value="Iniciante" required> Iniciante
+                    </p>
+                    <p>
+                        <input type="radio" name="experiencia" id="experienciaIntermediario" value="Intermediário"> Intermediário
+                    </p>
+                    <p>
+                        <input type="radio" name="experiencia" id="experienciaAvancado" value="Avançado"> Avançado
+                    </p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>Cadastro de Personagem</h2>
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome" required><br><br>
+                <div class="campo">
+                    <label for="origem"><strong>Origem:</strong></label>
+                    <select name="origem" id="origem">
+                        <option value="0">Selecione</option>
+                        <option value="1">Acadêmico</option>
+                        <option value="2">Agente de Saúde</option>
+                        <option value="3">Amnésico</option>
+                        <option value="4">Artista</option>
+                        <option value="5">Atleta</option>
+                        <option value="6">Chef</option>
+                        <option value="7">Criminoso</option>
+                        <option value="8">Cultista Arrependido</option>
+                        <option value="9">Desgarrrado</option>
+                        <option value="10">Engenheiro</option>
+                        <option value="11">Executivo</option>
+                        <option value="12">Investigador</option>
+                        <option value="13">Lutador</option>
+                        <option value="14">Magnata</option>
+                        <option value="15">Mercenário</option>
+                        <option value="16">Operário</option>
+                        <option value="17">Policial</option>
+                        <option value="18">Religioso</option>
+                        <option value="19">Servidor Público</option>
+                        <option value="20">Teórico da Conspiração</option>
+                        <option value="21">T.I.</option>
+                        <option value="22">Trabalhador Rural</option>
+                        <option value="23">Trambiqueiro</option>
+                        <option value="24">Universitário</option>
+                        <option value="25">Vítima</option>
+                    </select>
+                </div><br>
+                <div class="campo">
+                    <label for="classe"><strong>Classe:</strong></label>
+                    <select name="classe" id="classe">
+                        <option value="0">Selecione</option>
+                        <option value="1">Combatente</option>
+                        <option value="2">Especialista</option>
+                        <option value="3">Ocultista</option>
+                    </select>
+                </div><br>
+                <div class="campo">
+                    <label for="sexoPersonagem"><strong>Sexo:</strong></label>
+                    <input type="radio" name="sexoPersonagem" id="sexoPersonagemMasculino" value="Masculino" required> Masculino
+                    <input type="radio" name="sexoPersonagem" id="sexoPersonagemFeminino" value="Feminino"> Feminino
+                    <input type="radio" name="sexoPersonagem" id="sexoPersonagemOutro" value="Outro"> Outro
+                </div><br>
+                <div class="campo">
+                    <label for="nascimentoPersonagem"><strong>Nascimento:</strong></label>
+                    <input type="date" name="nascimentoPersonagem" id="nascimentoPersonagem" required>
+                </div><br>
+                <div class="campo">
+                    <label for="trilhaClasse"><strong>Trilha:</strong></label>
+                    <select name="trilhaClasse" id="trilhaClasse">
+                        <option value="0">Selecione</option>
+                        <option value="1">Aniquilador</option>
+                        <option value="2">Tropa de Choque</option>
+                        <option value="3">Guerreiro</option>
+                        <option value="4">Operações Especiais</option>
+                        <option value="5">Médico de Campo</option>
+                        <option value="6">Técnico</option>
+                        <option value="7">Infiltrador</option>
+                        <option value="8">Negociador</option>
+                        <option value="9">Lâmina Paranormal</option>
+                        <option value="10">Conduíte</option>
+                        <option value="11">Graduado</option>
+                        <option value="12">Intuitivo</option>
+                    </select>
                 </div><br>
             </fieldset>
-            <!-- Botão de envio -->
-            
-                <abbr title="Enviar"><input type="submit" value="Enviar" class="botao"></abbr>
-            
-        </fieldset>
-    </form>
-    <hr>
-    <footer>
-        <a href="https://github.com/guidorodrigues" target="">Desenvolvido por Guido Rodrigues</a>
-    </footer>
+            <fieldset>
+                <!-- Seção de perguntas adicionais -->
+                <div class="campo">
+                    <label for="outroLado">
+                        <strong>4. Descreva o momento em que você percebeu que o mundo não era como imaginava:</strong>
+                    </label>
+                    <textarea rows="6" style="width: 26em;" required></textarea>
+                </div><br>
+                <div class="campo">
+                    <label for="arrependimento">
+                        <strong>5. Qual é o seu maior arrependimento?</strong>
+                    </label>
+                    <textarea rows="6" style="width: 26em;" required></textarea>
+                </div><br>
+                <div class="campo">
+                    <label for="motivo">
+                        <strong>6. O que te motiva a continuar?</strong>
+                    </label>
+                    <textarea rows="6" style="width: 26em;" required></textarea>
+                </div><br>
+                <div class="campo">
+                    <label for="medo">
+                        <strong>7. Qual o seu maior medo?</strong>
+                    </label>
+                    <textarea rows="6" style="width: 26em;" required></textarea>
+                </div><br>
+                <!-- Seção de estilo de jogo -->
+                <fieldset class="informacoesAdicionais">
+                    <div class="campo">
+                        <h3>Qual o seu estilo de jogo?</h3>
+                        <input type="checkbox" name="estilo" id="estiloRoleplay" value="Roleplay"> <label for="roleplay">Roleplay</label>
+                    </div><br>
+                    <div class="campo">
+                        <input type="checkbox" name="estilo" id="estiloCombate" value="Combate"> <label for="combate">Combate</label>
+                    </div><br>
+                </fieldset>
+                <!-- Botão de envio -->
+        
+                    <abbr title="Enviar"><input type="submit" value="Enviar" class="botao"></abbr>
+        
+            </fieldset>
+        </form>
+        <hr>
+        <footer>
+            <a href="https://github.com/guidorodrigues" target="">Desenvolvido por Guido Rodrigues</a>
+        </footer>
+    </main>
 </body>
 
 </html>
