@@ -105,5 +105,4 @@ fieldset .grupo .campo{
 .campo input[type='text'], .campo input[type='email'], .campo area, .campo select{
     padding: 1.2em;
     border: 1px solid purple;
-    box-shadow: ;
 }
