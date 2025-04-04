@@ -1,3 +1,4 @@
+
 /* Estilo Geral */
 body {
     font-family: 'Times New Roman', Times, serif;
@@ -14,6 +15,8 @@ body {
 
 header {
     text-align: center;
+    background-color: black;
+    color: white;
     
 }
 
@@ -48,7 +51,7 @@ abbr {
 }
 
 /* Estilo do Formulário */
-main {
+form {
     max-width: 800px;
     margin: auto;
     
@@ -65,7 +68,7 @@ main {
 }
 
 
-input, select, textarea {
+input#jogador, .campo select, textarea {
     border-radius: 5px;
     padding: 1.2em;
     border: 1px solid purple;
@@ -81,14 +84,18 @@ input, select, textarea {
 /* Estilo do Botão */
 .botao {
     font-size: 1em;
+    margin: auto;
+    display: block;
+    width: 50%;
     color: white;
     background-color: #59429d; /* Cor de fundo para melhor contraste */
     border: none;
-    padding: 0.6em 1.2em; /* Ajuste de padding */
+    padding: 8px;
+    margin-top: 10px;
     box-shadow: 2px 2px 2px black;
     text-shadow: 1px 1px 1px black;
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    transition: background-color 0.3s; /* Transição suave para hover */
+    
 }
 
 .botao:hover {

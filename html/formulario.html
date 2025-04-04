@@ -10,12 +10,12 @@
 
 <body>
     <main>
-        <img src="/imagens/ordo-realitas.png" class="watermark" alt="Marca d'água">
-        <header>
-            <h1 id="titulo">FORMULÁRIO</h1>
-            <p id="subtitulo">Complete as informações!</p>
-        </header>
-        <hr>
+    <img src="/imagens/ordo-realitas.png" class="watermark" alt="Marca d'água">
+    <header>
+        <h1 id="titulo">FORMULÁRIO</h1>
+        <p id="subtitulo">Complete as informações!</p>
+    </header>
+    <hr>
         <form>
             <fieldset>
                 <h2>Cadastro de Jogador</h2>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="campo">
                     <label for="email"><strong>E-mail:</strong></label>
-                    <input type="email" name="email" id="email" placeholder="Digite o seu email" required>
+                    <input type="email" name="email" id="jogador" placeholder="Digite o seu email" required>
                 </div>
                 <div>
                     <label for="nascimento"><strong>Nascimento:</strong></label>
@@ -33,28 +33,38 @@
                 </div>
                 <div class="camposexo">
                     <h2>Sexo:</h2>
-                    <input type="radio" name="sexo" id="sexoMasculino" value="Masculino" required> 
-                    <label for="sexoMasculino">Masculino</label>
-                    <input type="radio" name="sexo" id="sexoFeminino" value="Feminino"> 
-                    <label for="sexoFeminino">Feminino</label>
+                    <p>
+                        <input type="radio" name="sexo" id="sexoMasculino" value="Masculino" required>
+                        <label for="sexoMasculino">Masculino</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="sexo" id="sexoFeminino" value="Feminino">
+                        <label for="sexoFeminino">Feminino</label>
+                    </p>
                     <input type="radio" name="sexo" id="sexoOutro" value="Outro"> 
                     <label for="sexoOutro">Outro</label>
                 </div>
                 <div>
                     <h2><strong>Qual suas experiências com RPG de mesa?</strong></h2>
-                    <input type="radio" name="experiencia" id="experienciaIniciante" value="Iniciante" required> 
-                    <label for="experienciaIniciante">Iniciante</label>
-                    <input type="radio" name="experiencia" id="experienciaIntermediario" value="Intermediário"> 
-                    <label for="experienciaIntermediario">Intermediário</label>
-                    <input type="radio" name="experiencia" id="experienciaAvancado" value="Avançado"> 
-                    <label for="experienciaAvancado">Avançado</label>
+                    <p>
+                        <input type="radio" name="experiencia" id="experienciaIniciante" value="Iniciante" required>
+                        <label for="experienciaIniciante">Iniciante</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="experiencia" id="experienciaIntermediario" value="Intermediário">
+                        <label for="experienciaIntermediario">Intermediário</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="experiencia" id="experienciaAvancado" value="Avançado">
+                        <label for="experienciaAvancado">Avançado</label>
+                    </p>
                 </div>
             </fieldset>
             <fieldset>
                 <h2>Cadastro de Personagem</h2>
                 <div class="campo">
-                    <label for="nome"><strong>Nome:</strong></label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
+                    <label for="jogador"><strong>Nome:</strong></label>
+                    <input type="text" name="jogador" id="jogador" placeholder="Digite o seu nome" required>
                 </div>
                 <div class="campo">
                     <label for="origem"><strong>Origem:</strong></label>
@@ -120,11 +130,18 @@
                     </select>
                 </div>
                 <div class="camposexo">
-                    <label for="sexo"><strong>Sexo:</strong></label>
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" name="masculino" id="masculino">
+                    <h2>Sexo:</h2>
+                    <p>
+                        <input type="radio" name="sexo" id="sexoMasculino" value="Masculino" required>
+                        <label for="sexoMasculino">Masculino</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="sexo" id="sexoFeminino" value="Feminino">
+                        <label for="sexoFeminino">Feminino</label>
+                    </p>
+                    <input type="radio" name="sexo" id="sexoOutro" value="Outro"> 
+                    <label for="sexoOutro">Outro</label>
                 </div>
-                
             </fieldset>
             <fieldset>
                 <h2>Backstory de Personagem</h2>
@@ -147,15 +164,18 @@
             </fieldset>
             <fieldset class="informacoesAdicionais">
                 
-                <div class="campo">
+                
                     <h3>Qual o seu estilo de jogo?</h3>
-                    <input type="checkbox" name="estilo" id="estiloRoleplay" value="Roleplay"> 
-                    <label for="estiloRoleplay">Roleplay</label>
-                </div>
-                <div class="campo">
-                    <input type="checkbox" name="estilo" id="estiloCombate" value="Combate"> 
-                    <label for="estiloCombate">Combate</label>
-                </div>
+                    <div>
+                        <p>
+                            <input type="checkbox" name="estilo" id="estiloRoleplay" value="Roleplay">
+                            <label for="estiloRoleplay">Roleplay</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="estilo" id="estiloCombate" value="Combate">
+                            <label for="estiloCombate">Combate</label>
+                        </p>
+                    </div>
             </fieldset>
             <div class="campo">
                 <input type="submit" value="Enviar" class="botao">
