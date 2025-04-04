@@ -19,6 +19,13 @@ header {
 h2{
     padding: 20px;
 }
+.titulo{
+    text-align: center;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 
 
 /* Estilo da Marca simbolo da ordo */
@@ -47,14 +54,18 @@ h2{
 }
 
 /* Estilo do Formulário */
-main, form {
-    max-width: 800px;
+    form {
     margin: auto;
+    max-width: 800px;
+    margin-bottom: auto;
     display: block;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     margin-bottom: 3em;
     
+}
+fieldset{
+    border-radius: 0px 0px 10px 10px ;
 }
 
 .campo {
@@ -66,7 +77,17 @@ main, form {
     color: #59429d;
     display: block;
 }
+.camposexo, .camposeletor{
+    color: #59429d;
+    padding: 10px;
+}
+.camposexo,.camposeletor, input{
+    padding: 10px;
+}
+.camposexo, .camposeletor input{
+    margin-left: 20px;
 
+}
 
 input#jogador, .campo select, textarea {
     border-radius: 5px;
@@ -87,15 +108,13 @@ input#jogador, .campo select, textarea {
     font-size: 1em;
     margin: auto;
     display: block;
-    width: 50%;
+    width: 20%;
     color: white;
-    background-color: #59429d; /* Cor de fundo para melhor contraste */
     border: none;
     padding: 8px;
-    margin-top: 10px;
+    background-color: #59429d;
     box-shadow: 2px 2px 2px black;
     text-shadow: 1px 1px 1px black;
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
     
 }
 
@@ -110,6 +129,10 @@ footer, a {
     background-color: purple;
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+footer>a:hover{
+    color: pink;
 }
 
 /* Responsividade */
