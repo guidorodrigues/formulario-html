@@ -54,22 +54,17 @@ h2{
 }
 
 /* Estilo do Formulário */
-    form {
+fieldset {
     margin: auto;
-    max-width: 800px;
-    margin-bottom: auto;
-    display: block;
+    max-width: 700px;
     background-color: white;
-    border-radius: 0px 0px 10px 10px;
     margin-bottom: 3em;
-    
-}
-fieldset{
-    border-radius: 0px 0px 10px 10px ;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .campo {
     margin-bottom: 1em;
+    padding: 10px;
 }
 
 .campo label {
@@ -96,7 +91,6 @@ input#jogador, .campo select, textarea {
     width: 100%;
     box-sizing: border-box;
 }
-
 
 .campo input:focus, .campo select:focus, .campo textarea:focus {
     background-color: #e0e0f8;
