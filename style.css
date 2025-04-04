@@ -1,3 +1,35 @@
+/* Responsividade */
+/* Responsividade para PC, celular e tablet */
+@media (max-width: 1200px) {
+    form {
+        width: 80%;
+    }
+
+    textarea {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
 
 /* estilo da marca dagua */
 .watermark {
@@ -23,21 +55,32 @@
     z-index: 1100;
 }
 
+
+
+@font-face {
+    font-family: 'sigilos';
+    src: url(fonte/Sigilos-Regular.ttf) format('opentype');
+}
+
 /* estilo do formulario */
 
 
 
 body{
-    background-color: #F0F8FF;
-    font-family: sans-serif;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #f0f8ff;
     font-size: 1em;
     color: #59429d;
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
+    margin: auto;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+
+
 }
-
-
 header{
     text-align: center;
 }
@@ -49,6 +92,11 @@ input, select, textarea, butao{
     border-radius: 5px;
 }
 
+main{
+    max-width: 800px;
+    margin: auto;
+    display: block;
+}
 
 .campo{
     margin-bottom: 1em;
