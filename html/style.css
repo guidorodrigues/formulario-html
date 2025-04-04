@@ -5,7 +5,7 @@
 /* Estilo Geral */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(129, 93, 143);
+    background: #b57edc;
 }
 
 header {
@@ -16,9 +16,25 @@ header {
     color: white;
     padding: 50px;
 }
+nav{
+    background: linear-gradient(10deg, #8A2BE2, #9932CC, #9400D3, #4B0082);
+    padding: 10px;
+    text-align: center;
+}
+nav, a{
+    padding: 8px;
+}
+
+h1{
+    font-size: 3em;
+}
+header, p{
+    font-size: 20px;
+}
 h2{
     padding: 20px;
 }
+
 .titulo{
     text-align: center;
     background: linear-gradient(135deg, #8A2BE2, #9932CC, #9400D3, #4B0082);
@@ -65,12 +81,14 @@ fieldset {
 .campo {
     margin-bottom: 1em;
     padding: 10px;
+    
 }
 
 .campo label {
     margin-bottom: 0.23em;
     color: #59429d;
     display: block;
+    
     
 }
 .camposexo, .camposeletor{
@@ -86,6 +104,9 @@ fieldset {
 }
 .camposexo .camposeletor, input{
     margin: 10px;
+}
+input{
+    border-radius: 8px ;
 }
 
 
@@ -115,10 +136,12 @@ input#jogador, .campo select, textarea {
     box-shadow: 2px 2px 2px black;
     text-shadow: 1px 1px 1px black;
     
+    
 }
 
 .botao:hover {
     background-color: #473a8a; /* Cor de fundo ao passar o mouse */
+    cursor: pointer;
 }
 
 /* Estilo do Rodapé */
@@ -128,12 +151,14 @@ footer {
     background: linear-gradient(135deg, #8A2BE2, #9932CC, #9400D3, #4B0082);
     font-weight: bold;
 }
-footer>a{
+
+/* links*/
+a{
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
-footer>a:hover{
+a:hover{
     color: pink;
 }
 
