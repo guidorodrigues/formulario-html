@@ -21,6 +21,7 @@ abbr {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 /* Estilo da Marca simbolo da ordo */
 .watermark {
     position: fixed;
@@ -63,6 +64,7 @@ main {
     display: block;
 }
 
+
 input, select, textarea {
     border-radius: 5px;
     padding: 1.2em;
@@ -70,6 +72,7 @@ input, select, textarea {
     width: 100%; /* Para garantir que os campos ocupem toda a largura disponível */
     box-sizing: border-box; /* Para incluir padding e border no cálculo da largura */
 }
+
 
 .campo input:focus, .campo select:focus, .campo textarea:focus {
     background-color: #e0e0f8;

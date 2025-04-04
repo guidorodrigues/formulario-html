@@ -18,7 +18,7 @@
         <hr>
         <form>
             <fieldset>
-                <legend>Cadastro de Jogador</legend>
+                <h2>Cadastro de Jogador</h2>
                 <div class="campo">
                     <label for="jogador"><strong>Nome:</strong></label>
                     <input type="text" name="jogador" id="jogador" placeholder="Digite o seu nome" required>
@@ -31,8 +31,8 @@
                     <label for="nascimento"><strong>Nascimento:</strong></label>
                     <input type="date" name="nascimento" id="nascimento">
                 </div>
-                <div>
-                    <label><strong>Sexo:</strong></label>
+                <div class="camposexo">
+                    <h2>Sexo:</h2>
                     <input type="radio" name="sexo" id="sexoMasculino" value="Masculino" required> 
                     <label for="sexoMasculino">Masculino</label>
                     <input type="radio" name="sexo" id="sexoFeminino" value="Feminino"> 
@@ -41,7 +41,7 @@
                     <label for="sexoOutro">Outro</label>
                 </div>
                 <div>
-                    <strong>Qual suas experiências com RPG de mesa?</strong>
+                    <h2><strong>Qual suas experiências com RPG de mesa?</strong></h2>
                     <input type="radio" name="experiencia" id="experienciaIniciante" value="Iniciante" required> 
                     <label for="experienciaIniciante">Iniciante</label>
                     <input type="radio" name="experiencia" id="experienciaIntermediario" value="Intermediário"> 
@@ -51,7 +51,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Cadastro de Personagem</legend>
+                <h2>Cadastro de Personagem</h2>
                 <div class="campo">
                     <label for="nome"><strong>Nome:</strong></label>
                     <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
@@ -88,6 +88,11 @@
                     </select>
                 </div>
                 <div class="campo">
+                    <label for="nascimentoPersonagem"><strong>Nascimento:</strong></label>
+                    <input type="date" name="nascimentoPersonagem" id="nascimentoPersonagem" required>
+                </div>
+                
+                <div class="campo">
                     <label for="classe"><strong>Classe:</strong></label>
                     <select name="classe" id="classe" required>
                         <option value="0">Selecione</option>
@@ -95,19 +100,6 @@
                         <option value="2">Especialista</option>
                         <option value="3">Ocultista</option>
                     </select>
-                </div>
-                <div class="campo">
-                    <label><strong>Sexo:</strong></label>
-                    <input type="radio" name="sexoPersonagem" id="sexoPersonagemMasculino" value="Masculino" required> 
-                    <label for="sexoPersonagemMasculino">Masculino</label>
-                    <input type="radio" name="sexoPersonagem" id="sexoPersonagemFeminino" value="Feminino"> 
-                    <label for="sexoPersonagemFeminino">Feminino</label>
-                    <input type="radio" name="sexoPersonagem" id="sexoPersonagemOutro" value="Outro"> 
-                    <label for="sexoPersonagemOutro">Outro</label>
-                </div>
-                <div class="campo">
-                    <label for="nascimentoPersonagem"><strong>Nascimento:</strong></label>
-                    <input type="date" name="nascimentoPersonagem" id="nascimentoPersonagem" required>
                 </div>
                 <div class="campo">
                     <label for="trilhaClasse"><strong>Trilha:</strong></label>
@@ -127,9 +119,15 @@
                         <option value="12">Intuitivo</option>
                     </select>
                 </div>
+                <div class="camposexo">
+                    <label for="sexo"><strong>Sexo:</strong></label>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="masculino" id="masculino">
+                </div>
+                
             </fieldset>
             <fieldset>
-                <legend>Perguntas Adicionais</legend>
+                <h2>Backstory de Personagem</h2>
                 <div class="campo">
                     <label for="outroLado"><strong>4. Descreva o momento em que você percebeu que o mundo não era como imaginava:</strong></label>
                     <textarea id="outroLado" name="outroLado" rows="6" required></textarea>
@@ -148,7 +146,7 @@
                 </div>
             </fieldset>
             <fieldset class="informacoesAdicionais">
-                <legend>Estilo de Jogo</legend>
+                
                 <div class="campo">
                     <h3>Qual o seu estilo de jogo?</h3>
                     <input type="checkbox" name="estilo" id="estiloRoleplay" value="Roleplay"> 
