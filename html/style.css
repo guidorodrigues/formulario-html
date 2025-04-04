@@ -1,27 +1,23 @@
 
+*{
+    margin: 0;
+}
 /* Estilo Geral */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #f0f8ff;
-    font-size: 1em;
-    color: #59429d;
-    margin: 0;
-    padding: 40px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(129, 93, 143);
 }
 
 header {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
     text-align: center;
-    background-color: black;
+    background-color: purple;
     color: white;
-    
+    padding: 50px;
 }
-
-abbr {
-    font-family: Arial, Helvetica, sans-serif;
+h2{
+    padding: 20px;
 }
 
 
@@ -51,9 +47,13 @@ abbr {
 }
 
 /* Estilo do Formulário */
-form {
+main, form {
     max-width: 800px;
     margin: auto;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 3em;
     
 }
 
@@ -72,13 +72,14 @@ input#jogador, .campo select, textarea {
     border-radius: 5px;
     padding: 1.2em;
     border: 1px solid purple;
-    width: 100%; /* Para garantir que os campos ocupem toda a largura disponível */
-    box-sizing: border-box; /* Para incluir padding e border no cálculo da largura */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
 .campo input:focus, .campo select:focus, .campo textarea:focus {
     background-color: #e0e0f8;
+    
 }
 
 /* Estilo do Botão */
@@ -103,9 +104,12 @@ input#jogador, .campo select, textarea {
 }
 
 /* Estilo do Rodapé */
-footer {
+footer, a {
     text-align: center;
     padding: 8px;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
 }
 
 /* Responsividade */
