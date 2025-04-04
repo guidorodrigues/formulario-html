@@ -1,37 +1,27 @@
-/* Responsividade */
-/* Responsividade para PC, celular e tablet */
-@media (max-width: 1200px) {
-    form {
-        width: 80%;
-    }
-
-    textarea {
-        width: 80%;
-    }
+/* Estilo Geral */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f8ff;
+    font-size: 1em;
+    color: #59429d;
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (max-width: 768px) {
-    form {
-        width: 90%;
-    }
-
-    textarea {
-        width: 90%;
-    }
+header {
+    text-align: center;
+    
 }
 
-@media (max-width: 480px) {
-    form {
-        width: 100%;
-    }
-
-    textarea {
-        width: 100%;
-    }
+abbr {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
-/* estilo da marca dagua */
+/* Estilo da Marca simbolo da ordo */
 .watermark {
     position: fixed;
     top: 50%;
@@ -45,6 +35,7 @@
     height: auto;
 }
 
+/* Estilo do Conteúdo */
 .content {
     max-width: 900px;
     margin: 0 auto;
@@ -55,100 +46,74 @@
     z-index: 1100;
 }
 
-
-
-@font-face {
-    font-family: 'sigilos';
-    src: url(fonte/Sigilos-Regular.ttf) format('opentype');
-}
-
-/* estilo do formulario */
-
-
-
-body{
-    font-family:'Times New Roman', Times, serif;
-    background-color: #f0f8ff;
-    font-size: 1em;
-    color: #59429d;
-    margin-left: 36%;
-    margin-top: 2%;
-    justify-content: center;
-    margin: auto;
-    padding: 40px;
-    min-height: 100vh;
-    position: relative;
-
-
-}
-header{
-    text-align: center;
-}
-abbr{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-input, select, textarea, butao{
-    border-radius: 5px;
-}
-
-main{
+/* Estilo do Formulário */
+main {
     max-width: 800px;
     margin: auto;
-    display: block;
+    
 }
 
-.campo{
+.campo {
     margin-bottom: 1em;
 }
 
-
-.campo label{
-    margin-bottom: 0.2em;
+.campo label {
+    margin-bottom: 0.23em;
     color: #59429d;
     display: block;
 }
 
-fieldset .grupo .campo{
-    float: left;
-    margin-right: 1em;
-
-}
-
-.campo input[type='text'], .campo input[type='email'], .campo area, .campo select{
+input, select, textarea {
+    border-radius: 5px;
     padding: 1.2em;
     border: 1px solid purple;
-}
-
-.campo select option{
-    padding-right: 1em;
-
+    width: 100%; /* Para garantir que os campos ocupem toda a largura disponível */
+    box-sizing: border-box; /* Para incluir padding e border no cálculo da largura */
 }
 
 .campo input:focus, .campo select:focus, .campo textarea:focus {
     background-color: #e0e0f8;
 }
 
-.botao{
+/* Estilo do Botão */
+.botao {
     font-size: 1em;
-    color:#59429d;
-    border: 0;
-    margin-bottom: 1em;   
     color: white;
-    padding: 0.23m 0.6em;
+    background-color: #59429d; /* Cor de fundo para melhor contraste */
+    border: none;
+    padding: 0.6em 1.2em; /* Ajuste de padding */
     box-shadow: 2px 2px 2px black;
     text-shadow: 1px 1px 1px black;
-    position: absolute;
-    top: 90%;
-    left: 30%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s; /* Transição suave para hover */
 }
 
-footer{
+.botao:hover {
+    background-color: #473a8a; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do Rodapé */
+footer {
     text-align: center;
     padding: 8px;
-    
-    
-    
 }
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 100%;
+    }
+}
+
