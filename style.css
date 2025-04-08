@@ -34,6 +34,7 @@ main {
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
+  box-shadow: 1px 1px 8px black;
 }
 
 /* Estilo do Conteúdo */
