@@ -44,20 +44,6 @@ h2{
 }
 
 
-/* Estilo da Marca simbolo da ordo */
-.watermark {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.15;
-    z-index: 1000;
-    pointer-events: none;
-    width: 80vh;
-    max-width: 700px;
-    height: auto;
-}
-
 /* Estilo do Conteúdo */
 .content {
     max-width: 900px;
