@@ -1,169 +1,149 @@
-
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 /* Estilo Geral */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #b57edc;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #b57edc;
 }
 
 header {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    text-align: center;
-    background: linear-gradient(135deg, #8A2BE2, #9932CC, #9400D3, #4B0082);
-    color: white;
-    padding: 50px;
-}
-nav{
-    background: linear-gradient(10deg, #8A2BE2, #9932CC, #9400D3, #4B0082);
-    padding: 10px;
-    text-align: center;
-}
-nav, a{
-    padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  background: linear-gradient(135deg, #8a2be2, #9932cc, #9400d3, #4b0082);
+  color: white;
+  padding: 50px;
 }
 
-h1{
-    font-size: 3em;
+nav {
+  background: linear-gradient(10deg, #8a2be2, #9932cc, #9400d3, #4b0082);
+  padding: 10px;
+  text-align: center;
 }
-header, p{
-    font-size: 20px;
+a {
+  padding: 8px;
 }
+
 h2{
-    padding: 20px;
+    min-w: 100vh;
+}
+main{
+    max-width: 100vh;
+    display: block;
+    margin: auto;
 }
 
-.titulo{
-    text-align: center;
-    background: linear-gradient(135deg, #8A2BE2, #9932CC, #9400D3, #4B0082);
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
 
+.titulo {
+  text-align: center;
+  background: linear-gradient(135deg, #8a2be2, #9932cc, #9400d3, #4b0082);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
 /* Estilo do Conteúdo */
 .content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    position: relative;
-    z-index: 1100;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  position: relative;
+  z-index: 1100;
 }
 
 /* Estilo do Formulário */
 fieldset {
-    margin: auto;
-    max-width: 700px;
-    background-color: white;
-    margin-bottom: 3em;
-    border-radius: 0px 0px 20px 20px;
+  margin: auto;
+  max-width: 700px;
+  background-color: white;
+  margin-bottom: 3em;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .campo {
-    margin-bottom: 1em;
-    padding: 10px;
-    
+  margin-bottom: 1em;
+  padding: 10px;
 }
 
 .campo label {
-    margin-bottom: 0.23em;
-    color: #59429d;
-    display: block;
-    
-    
+  margin-bottom: 0.23em;
+  color: #59429d;
+  display: block;
 }
-.camposexo, .camposeletor{
-    color: #59429d;
-    padding: 10px;
+.camposexo,
+.camposeletor {
+  color: #59429d;
+  padding: 10px;
 }
-.camposexo,.camposeletor, input{
-    padding: 10px;
+.camposexo,
+.camposeletor,
+input {
+  padding: 10px;
 }
-.camposexo, .camposeletor input{
-    margin-left: 20px;
-
+.camposexo,
+.camposeletor input {
+  margin-left: 20px;
 }
-.camposexo .camposeletor, input{
-    margin: 10px;
+.camposexo .camposeletor,
+input {
+  margin: 10px;
 }
-input{
-    border-radius: 8px ;
-}
-
-
-input#jogador, .campo select, textarea {
-    border-radius: 5px;
-    padding: 1.2em;
-    border: 1px solid purple;
-    width: 100%;
-    box-sizing: border-box;
+input {
+  border-radius: 8px;
 }
 
-.campo input:focus, .campo select:focus, .campo textarea:focus {
-    background-color: #e0e0f8;
-    
+input#jogador,
+.campo select,
+textarea {
+  border-radius: 5px;
+  padding: 1.2em;
+  border: 1px solid purple;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  background-color: #e0e0f8;
 }
 
 /* Estilo do Botão */
 .botao {
-    font-size: 1em;
-    margin: auto;
-    display: block;
-    width: 20%;
-    color: white;
-    border: none;
-    padding: 8px;
-    background-color: #59429d;
-    box-shadow: 2px 2px 2px black;
-    text-shadow: 1px 1px 1px black;
-    
-    
+  font-size: 1em;
+  margin: auto;
+  display: block;
+  width: 20%;
+  color: white;
+  border: none;
+  padding: 8px;
+  background-color: #59429d;
+  box-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px 1px black;
 }
 
 .botao:hover {
-    background-color: #473a8a; /* Cor de fundo ao passar o mouse */
-    cursor: pointer;
+  background-color: #473a8a; /* Cor de fundo ao passar o mouse */
+  cursor: pointer;
 }
 
 /* Estilo do Rodapé */
 footer {
-    text-align: center;
-    padding: 8px;
-    background: linear-gradient(135deg, #8A2BE2, #9932CC, #9400D3, #4B0082);
-    font-weight: bold;
+  text-align: center;
+  padding: 8px;
+  background: linear-gradient(135deg, #8a2be2, #9932cc, #9400d3, #4b0082);
+  font-weight: bold;
 }
 
 /* links*/
-a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
-a:hover{
-    color: pink;
+a:hover {
+  color: pink;
 }
-
-/* Responsividade */
-@media (max-width: 1200px) {
-    form {
-        width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    form {
-        width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    form {
-        width: 100%;
-    }
-}
-
