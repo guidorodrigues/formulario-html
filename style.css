@@ -7,33 +7,25 @@ body {
   background: #b57edc;
 }
 
-header {
+header, nav {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
   text-align: center;
   background: linear-gradient(135deg, #8a2be2, #9932cc, #9400d3, #4b0082);
   color: white;
   padding: 50px;
+  margin: 0;
 }
 
 nav {
-  background: linear-gradient(10deg, #8a2be2, #9932cc, #9400d3, #4b0082);
   padding: 10px;
   text-align: center;
 }
-a {
-  padding: 8px;
-}
 
-h2{
-    min-w: 100vh;
+main {
+  max-width: 100vh;
+  display: block;
+  margin: auto;
 }
-main{
-    max-width: 100vh;
-    display: block;
-    margin: auto;
-}
-
 
 .titulo {
   text-align: center;
@@ -143,6 +135,8 @@ a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 10;
+  margin: 10px;
 }
 a:hover {
   color: pink;
