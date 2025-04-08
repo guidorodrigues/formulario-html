@@ -1,3 +1,54 @@
+/* Responsividade para telas de celular, tablet e PC */
+
+/* Estilo geral para telas maiores (PC) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 16px;
+    }
+    .content {
+        padding: 40px;
+    }
+    .botao {
+        width: 15%;
+    }
+}
+
+/* Estilo para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+    .content {
+        padding: 20px;
+    }
+    .botao {
+        width: 25%;
+    }
+}
+
+/* Estilo para celulares */
+@media (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+    header {
+        padding: 30px;
+    }
+    .content {
+        padding: 15px;
+    }
+    .botao {
+        width: 50%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+
 
 *{
     margin: 0;
